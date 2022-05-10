@@ -1,0 +1,76 @@
+.container_header--nav {
+  background-image: url(../../img/header/bg_header.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container_header--nav .container_imgMenu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container_header--nav .container_imgMenu img {
+  width: 150px;
+  height: 55px;
+}
+
+.container_header--nav .container_imgMenu .menu_nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container_header--nav .container_imgMenu .menu_nav .menu_nav--button {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(98.44%, rgba(238, 89, 35, 0.72)));
+  background: linear-gradient(180deg, #000000 0%, rgba(238, 89, 35, 0.72) 98.44%);
+  -webkit-box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.8);
+          box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.8);
+  border-radius: 0px 0px 30px 30px;
+  border: none;
+  height: 70px;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.container_header--nav .container_titleAndImg {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5%;
+}
+
+.container_header--nav .container_titleAndImg .titles_header {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #fff;
+  font-weight: 700;
+  font-size: 120px;
+}
+
+.container_header--nav .container_titleAndImg .titles_header h2 {
+  margin: 0;
+  text-align: right;
+  line-height: 180px;
+}
+/*# sourceMappingURL=header.css.map */
