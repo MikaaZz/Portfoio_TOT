@@ -1,0 +1,100 @@
+.container_main-cursosPrateleira {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container_main-cursosPrateleira h2 {
+  color: #fff;
+  font-size: 60px;
+  margin: 0;
+}
+
+.container_main-cursosPrateleira .container_cursosPrateleira-cards {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container_main-cursosPrateleira .container_cursosPrateleira-cards .background_image-one {
+  background-image: url(../../../img/containerMain/cursosPrateleira/CardCursoPrateleira.png);
+}
+
+.container_main-cursosPrateleira .container_cursosPrateleira-cards .background_image-two {
+  background-image: url(../../../img/containerMain/cursosPrateleira/CardCursoPrateleira-1.png);
+}
+
+.container_main-cursosPrateleira .container_cursosPrateleira-cards .background_image-tree {
+  background-image: url(../../../img/containerMain/cursosPrateleira/CardCursoPrateleira-2.png);
+}
+
+.container_main-cursosPrateleira .container_cursosPrateleira-cards .content_cursosPrateleira-cards {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 520px;
+  width: 320px;
+  margin: 2rem;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.container_main-cursosPrateleira .container_cursosPrateleira-cards .content_cursosPrateleira-cards .cursosPrateleira_cards-text {
+  display: none;
+  position: relative;
+  top: 2rem;
+  background-color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  width: 280px;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.container_main-cursosPrateleira .container_cursosPrateleira-cards .content_cursosPrateleira-cards .cursosPrateleira_cards-text h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+}
+
+.container_main-cursosPrateleira .container_cursosPrateleira-cards .content_cursosPrateleira-cards .cursosPrateleira_cards-text p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  margin: 0.5rem;
+}
+
+.container_main-cursosPrateleira .container_cursosPrateleira-cards .content_cursosPrateleira-cards:hover .cursosPrateleira_cards-text {
+  display: block;
+}
+/*# sourceMappingURL=cursosPrateleira.css.map */

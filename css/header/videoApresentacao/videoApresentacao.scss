@@ -1,0 +1,104 @@
+.container_main-videoPresentation {
+  background-image: url(../../../img/header/videoApresentacao/Vector.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  margin: 5rem 15rem;
+
+  .container_videoPresentation-description {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem;
+
+    .content_description-title {
+      color: #fff;
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .content_description-text {
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .content_description-button {
+      background-color: #fff;
+      border: none;
+      border-radius: 30px;
+
+      color: #ee5923;
+
+      line-height: 28px;
+      font-size: 24px;
+      font-weight: 700;
+
+      padding: 0.8rem 6rem;
+
+      transition: all 250ms ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .container_videoPresentation-video {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    .content_video-iframe {
+      border-radius: 25px;
+      height: 350px;
+      width: 620px;
+      z-index: 2;
+      iframe {
+        border-radius: 25px 0px 0px 25px;
+        box-shadow: 6px 0px 8px rgba(0, 0, 0, 0.25);
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .container_video-list {
+      background: #8C237B;
+      box-shadow: 6px 0px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 0px 50px 50px 0px;
+      z-index: 1;
+
+      .content_video-list {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        list-style: none;
+        margin: 0;
+        padding: 1.5rem 0.5rem;
+
+        height: 300px;
+
+        li {
+          color: #fff;
+          line-height: 15px;
+          font-size: 20px;
+          font-weight: 700;
+
+          text-align: center;
+
+          padding: 0.75rem 0.5rem;
+        }
+      }
+    }
+
+  }
+
+
+}
