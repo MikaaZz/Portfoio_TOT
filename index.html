@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="pt-BR">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
@@ -16,8 +16,6 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/main/style.css">
-
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
@@ -26,7 +24,10 @@
   <header class="container_header--nav">
 
     <nav class="container_imgMenu">
-      <img src="img/header/Logo_150_55.png" alt="Logo TOT">
+      <picture>
+
+        <img src="./img/header/Logo_150_55.png" alt="Logo TOT">
+      </picture>
       <div class="menu_nav">
         <button class="menu_nav--button">
           <h2>Entre em contato</h2>
@@ -56,25 +57,34 @@
         </div>
 
       </div>
-
-      <img src="/img/header/macacoPortifa.png" alt="Icone TOT">
+      <picture>
+        <source media="(max-width:414px)" srcset="/img/header/macacoPortifaSmall.png">
+        <source media="(max-width:968px)" srcset="/img/header/macacoPortifaMedium.png">
+        <img src="./img/header/macacoPortifa.png" alt="Icone TOT">
+      </picture>
 
     </section>
 
     <section class="container_cardsHeader">
 
       <div class="cardHeader">
-        <img src="./img/header/Icone01.png" alt="Icone cursos de prateleira">
+        <picture>
+          <img src="./img/header/Icone01.png" alt="Icone cursos de prateleira">
+        </picture>
         <h2>Cursos de Prateleira</h2>
       </div>
 
       <div class="cardHeader">
-        <img src="./img/header/Icone02.png" alt="Icone Fábrica de Conteúdo">
+        <picture>
+          <img src="./img/header/Icone02.png" alt="Icone Fábrica de Conteúdo">
+        </picture>
         <h2>Fábrica de Conteúdo</h2>
       </div>
 
       <div class="cardHeader">
-        <img src="./img/header/Icone03.png" alt="Icone Consultoria">
+        <picture>
+          <img src="./img/header/Icone03.png" alt="Icone Consultoria">
+        </picture>
         <h2>Consultoria</h2>
       </div>
 
@@ -208,6 +218,80 @@
 
     </section>
 
+    <section class="container_main-storyline">
+
+      <div class="content_shadowTransition-bottom"></div>
+
+      <h2>Storyline</h2>
+
+      <div class="container_storyline-cards">
+
+        <div class="container_storyline-card ">
+          <picture>
+            <img src="/img/containerMain/stoyline/imgFrente.png" alt="">
+          </picture>
+          <div class="content_storyline-card storyline_backgroundImage-one">
+            <div class="storyline_cards-texts">
+              <h2>Nome do curso 01</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem iure, dolores ex quasi hic quos beatae
+                voluptatem odio cupiditate ad perferendis, aperiam quae debitis amet est explicabo doloribus nulla
+                pariatur.
+              </p>
+            </div>
+            <div class="storyline_cards-buttons">
+              <button>Trailer</button>
+              <button>Testar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container_storyline-card ">
+          <picture>
+            <img src="/img/containerMain/stoyline/imgFrente.png" alt="">
+          </picture>
+          <div class="content_storyline-card storyline_backgroundImage-two">
+            <div class="storyline_cards-texts">
+              <h2>Nome do curso 02</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem iure, dolores ex quasi hic quos beatae
+                voluptatem odio cupiditate ad perferendis, aperiam quae debitis amet est explicabo doloribus nulla
+                pariatur.
+              </p>
+            </div>
+            <div class="storyline_cards-buttons">
+              <button>Trailer</button>
+              <button>Testar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container_storyline-card ">
+          <picture>
+            <img src="/img/containerMain/stoyline/imgFrente.png" alt="">
+          </picture>
+          <div class="content_storyline-card storyline_backgroundImage-tree">
+            <div class="storyline_cards-texts">
+              <h2>Nome do curso 03</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem iure, dolores ex quasi hic quos beatae
+                voluptatem odio cupiditate ad perferendis, aperiam quae debitis amet est explicabo doloribus nulla
+                pariatur.
+              </p>
+            </div>
+            <div class="storyline_cards-buttons">
+              <button>Trailer</button>
+              <button>Testar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="content_shadowTransition-top"></div>
+
+    </section>
+
   </main>
 
   <footer>
@@ -217,7 +301,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+   Google Analytics: change UA-XXXXX-Y to be your site's ID. 
   <script>
     window.ga = function () {
       ga.q.push(arguments)

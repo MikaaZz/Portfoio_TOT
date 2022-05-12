@@ -42,6 +42,10 @@
 
       transition: $mainTransitionTime;
 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+
       .cursosPrateleira_cards-text {
         display: none;
 
@@ -57,24 +61,26 @@
 
         transition: $mainTransitionTime;
 
+        
+
         h4 {
           font-weight: $boldFont;
-          font-size: 16px;
+          @include fontSize ($titleCardsFontSize);
           line-height: 18px;
           text-align: center;
 
-          color: #000000;
+          color: $blackFontColor;
         }
 
         p {
           font-style: normal;
-          font-weight: 500;
-          font-size: 12px;
+          font-weight: $regularFont;
+          @include fontSize ($paragraphCardsFontSize);
           line-height: 16px;
+          
+          color: $blackFontColor;
 
-          color: #000000;
-
-          margin: 0.5rem;
+          margin: 1rem;
         }
       }
       &:hover {
