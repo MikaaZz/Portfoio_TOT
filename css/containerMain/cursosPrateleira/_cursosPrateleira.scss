@@ -5,8 +5,8 @@
   justify-content: space-around;
 
   h2 {
-      color: #fff;
-      font-size: 60px;
+      color: $whiteFontColor;
+      @include fontSize ($subTitleFontSize);
 
       margin: 0;
   }
@@ -35,12 +35,12 @@
       flex-direction: column;
       justify-content: flex-end;
 
-      height: 520px;
-      width: 320px;
+      @include heigthSize (520px);
+      @include widthSize (320px);
 
       margin: 2rem;
 
-      transition: all 250ms ease-in-out;
+      transition: $mainTransitionTime;
 
       .cursosPrateleira_cards-text {
         display: none;
@@ -48,17 +48,17 @@
         position: relative;
         top: 2rem;
 
-        background-color: #fff;
+        background-color: $whiteColor;
         border-radius: 25px;
 
         text-align: center;
 
-        width: 280px;
+        @include widthSize (280px);
 
-        transition: all 250ms ease-in-out;
+        transition: $mainTransitionTime;
 
         h4 {
-          font-weight: 700;
+          font-weight: $boldFont;
           font-size: 16px;
           line-height: 18px;
           text-align: center;

@@ -1,12 +1,9 @@
-@import url(../_base/import.css);
-
 .container_header--nav {
   background-image: url(../../img/header/bg_header.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
-  @include vwSize (1920px);
 
   .container_imgMenu {
     align-items: flex-end;
@@ -20,14 +17,14 @@
       justify-content: space-around;
 
       .menu_nav--button {
-        color: #fff;
+        color: $whiteFontColor;
         background: $gradientOrangeBlack;
         box-shadow: $mainBoxShadow;
         border-radius: 0px 0px 30px 30px;
         border: none;
 
-        @include vwSize (70px);
-        @include vwSize (250px);
+        @include heigthSize (70px);
+        @include widthSize (250px);
 
         text-align: center;
         text-decoration: none;
@@ -36,7 +33,7 @@
 
         margin: 0 1rem;
 
-        transition: all 250ms ease-in-out;
+        transition: $mainTransitionTime;
 
         cursor: pointer;
 
@@ -53,15 +50,17 @@
     justify-content: center;
     margin: 3.5rem 0 2rem 0;
 
-    width: 100%;
-
     .titles_header {
       align-items: flex-end;
-      color: #fff;
 
-      h1 , h2 {
-        font-weight: bold;
-        font-size: 10rem;
+      h1,
+      h2,
+      li {
+        @include fontSize($titleFontSize);
+
+        color: $whiteFontColor;
+
+        font-weight: $boldFont;
         margin: 0;
         text-align: right;
         line-height: 160px;
@@ -71,14 +70,10 @@
         align-items: center;
         display: flex;
         overflow: hidden;
-        height: 12rem;
+        @include heigthSize (140px);
 
         .content_animation-list {
-          font-weight: bold;
-          font-size: 10rem;
           margin: 0;
-          text-align: right;
-          line-height: 160px;
 
           list-style: none;
 
@@ -92,7 +87,8 @@
 
           @keyframes change {
 
-            0% , 100% {
+            0%,
+            100% {
               transform: translate3d(0, -33%, 0);
             }
 
@@ -122,16 +118,14 @@
       align-items: center;
       display: flex;
       justify-content: center;
-      background: rgba(238, 89, 35, 0.3);
-      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+      background: $orangeTransparenci;
+      box-shadow: $mainBoxShadow;
       border-radius: 10px;
-
-      color: #fff;
 
       padding: 4rem 0;
 
       text-align: center;
-      transition: all 250ms ease-in-out;
+      transition: $mainTransitionTime;
 
       width: 250px;
       height: 100px;
@@ -144,10 +138,11 @@
 
       h2 {
         display: none;
+        color: $whiteFontColor;
       }
 
       &:hover {
-        background-color: #ee5923;
+        background-color: $mainColor;
         transform: scale(1.05);
 
         img {

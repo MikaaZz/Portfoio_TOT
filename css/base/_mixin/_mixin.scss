@@ -13,7 +13,13 @@
     @return #{vwSize}vw;
 }
 
-@mixin vwSize ($size) {
+@mixin heigthSize ($size) {
+    height: $size;
+    height: calculateVw($size);
+}
+
+@mixin widthSize ($size) {
     width: $size;
     width: calculateVw($size);
 }
+

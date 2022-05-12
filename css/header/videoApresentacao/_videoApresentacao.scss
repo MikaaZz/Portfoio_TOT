@@ -18,30 +18,30 @@
     margin: 2rem;
 
     .content_description-title {
-      color: #fff;
-      font-size: 48px;
+      color: $whiteFontColor;
+      @include fontSize($highlightTitleFontSize);
       margin: 0;
     }
 
     .content_description-text {
-      color: #fff;
-      font-size: 16px;
+      color: $whiteFontColor;
+      @include fontSize($paragraphFontSize);
     }
 
     .content_description-button {
-      background-color: #fff;
+      background-color: $whiteColor;
       border: none;
       border-radius: 30px;
 
-      color: #ee5923;
+      color: $orangeFontColor;
 
       line-height: 28px;
-      font-size: 24px;
-      font-weight: 700;
+      @include fontSize($mediumButtonFontSize);
+      font-weight: $boldFont;
 
       padding: 0.8rem 6rem;
 
-      transition: all 250ms ease-in-out;
+      transition: $mainTransitionTime;
 
       &:hover {
         transform: scale(1.1);
@@ -56,20 +56,23 @@
 
     .content_video-iframe {
       border-radius: 25px;
-      height: 350px;
-      width: 620px;
+
+      @include heigthSize (350px);
+      @include widthSize (620px);
+
       z-index: 2;
+
       iframe {
         border-radius: 25px 0px 0px 25px;
-        box-shadow: 6px 0px 8px rgba(0, 0, 0, 0.25);
+        box-shadow: $videoBoxShadow;
         height: 100%;
         width: 100%;
       }
     }
 
     .container_video-list {
-      background: #8C237B;
-      box-shadow: 6px 0px 4px rgba(0, 0, 0, 0.25);
+      background: $secondaryColor;
+      box-shadow: $mainBoxShadow;
       border-radius: 0px 50px 50px 0px;
       z-index: 1;
 
@@ -83,13 +86,13 @@
         margin: 0;
         padding: 1.5rem 0.5rem;
 
-        height: 300px;
+        @include heigthSize (300px);
 
         li {
           color: #fff;
           line-height: 15px;
-          font-size: 20px;
-          font-weight: 700;
+          @include fontSize(20px);
+          font-weight: $boldFont;
 
           text-align: center;
 

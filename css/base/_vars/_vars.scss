@@ -1,9 +1,13 @@
 // Font sizes
 
 $titleFontSize : 120px;
-$subTitleFontsize: 80px; 
+$subTitleFontSize: 80px; 
 $highlightTitleFontSize: 48px;
+$paragraphFontSize: 16px;
 
+$bigButtonFontSize: 36px;
+$mediumButtonFontSize: 24px;
+$smallButtonFontSize: 16px;
 // Font-weight
 
 $regularFont : 300;
@@ -19,6 +23,7 @@ $whiteColor: #fff;
 
 $blackFontColor: #272727;
 $whiteFontColor: #fff;
+$orangeFontColor: #ee5923;
 
 $gradientOrangeBlack: linear-gradient(180deg, #000000 0%, rgba(238, 89, 35, 0.72) 98.44%);
 $gradientOrangePurple: linear-gradient(93.59deg, #EE5923 5.96%, #8C237B 93.57%);
@@ -30,3 +35,7 @@ $orangeTransparenci: rgba(238, 89, 35, 0.3);
 
 $mainBoxShadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
 $videoBoxShadow: 5px 10px 20px rgba(0, 0, 0, 0.8);
+
+// Transition
+
+$mainTransitionTime: all 250ms ease-in-out;
