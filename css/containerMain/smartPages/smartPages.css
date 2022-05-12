@@ -26,6 +26,17 @@
   padding: 0;
 }
 
+.container_main-smartPage .content_shadowTransition-bottom {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(#000000));
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
+  height: 15vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
 .container_main-smartPage h2 {
   color: #fff;
   font-size: 60px;

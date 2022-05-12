@@ -1,0 +1,19 @@
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+@function calculateVw($size) {
+    $vwSize: $size / 100vw * 100;
+    @return #{vwSize}vw;
+}
+
+@mixin vwSize ($size) {
+    width: $size;
+    width: calculateVw($size);
+}

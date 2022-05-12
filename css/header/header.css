@@ -1,3 +1,5 @@
+@import url(../_base/import.css);
+
 .container_header--nav {
   background-image: url(../../img/header/bg_header.png);
   background-position: center;
@@ -62,7 +64,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 3.5rem auto 2rem auto;
+  margin: 3.5rem 0 2rem 0;
+  width: 100%;
 }
 
 .container_header--nav .container_titleAndImg .titles_header {
@@ -72,7 +75,7 @@
   color: #fff;
 }
 
-.container_header--nav .container_titleAndImg .titles_header h2 {
+.container_header--nav .container_titleAndImg .titles_header h1, .container_header--nav .container_titleAndImg .titles_header h2 {
   font-weight: bold;
   font-size: 10rem;
   margin: 0;

@@ -1,30 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url(../_base/import.css);
 
-html {
-  background-color: #000;
-  color: #222;
-  font-size: 1rem;
-  line-height: 1.4;
+@import url(../header/header.css);
+@import url(../header/videoApresentacao/videoApresentacao.css);
 
-}
-
-body {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-li {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-p {
-  font-family: 'Open Sans', sans-serif;
-}
+@import url(../containerMain/cursosPrateleira/cursosPrateleira.css);
+@import url(../containerMain/smartPages/smartPages.css);

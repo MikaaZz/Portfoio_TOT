@@ -1,8 +1,12 @@
+@import url(../_base/import.css);
+
 .container_header--nav {
   background-image: url(../../img/header/bg_header.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include vwSize (1920px);
 
   .container_imgMenu {
     align-items: flex-end;
@@ -17,18 +21,18 @@
 
       .menu_nav--button {
         color: #fff;
-        background: linear-gradient(180deg, #000000 0%, rgba(238, 89, 35, 0.72) 98.44%);
-        box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.8);
+        background: $gradientOrangeBlack;
+        box-shadow: $mainBoxShadow;
         border-radius: 0px 0px 30px 30px;
         border: none;
 
-        height: 70px;
-        width: 250px;
+        @include vwSize (70px);
+        @include vwSize (250px);
 
         text-align: center;
         text-decoration: none;
 
-        font-weight: 400;
+        font-weight: $regularFont;
 
         margin: 0 1rem;
 
@@ -47,13 +51,15 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 3.5rem auto 2rem auto;
+    margin: 3.5rem 0 2rem 0;
+
+    width: 100%;
 
     .titles_header {
       align-items: flex-end;
       color: #fff;
 
-      h2 {
+      h1 , h2 {
         font-weight: bold;
         font-size: 10rem;
         margin: 0;
