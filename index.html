@@ -16,6 +16,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/main/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -133,7 +134,7 @@
 
       <div class="container_cursosPrateleira-cards">
 
-        <div class="content_cursosPrateleira-cards background_image-one">
+        <div class="content_cursosPrateleira-cards background_image-one ">
 
           <div class="cursosPrateleira_cards-text">
             <h4>Tomada de Decisão</h4>
@@ -227,9 +228,6 @@
       <div class="container_storyline-cards">
 
         <div class="container_storyline-card ">
-          <picture>
-            <img src="/img/containerMain/stoyline/imgFrente.png" alt="">
-          </picture>
           <div class="content_storyline-card storyline_backgroundImage-one">
             <div class="storyline_cards-texts">
               <h2>Nome do curso 01</h2>
@@ -240,16 +238,13 @@
               </p>
             </div>
             <div class="storyline_cards-buttons">
-              <button>Trailer</button>
-              <button>Testar</button>
+              <button class="cards_button button-trailer">Trailer</button>
+              <button class="cards_button button-testing">Testar</button>
             </div>
           </div>
         </div>
 
         <div class="container_storyline-card ">
-          <picture>
-            <img src="/img/containerMain/stoyline/imgFrente.png" alt="">
-          </picture>
           <div class="content_storyline-card storyline_backgroundImage-two">
             <div class="storyline_cards-texts">
               <h2>Nome do curso 02</h2>
@@ -260,16 +255,13 @@
               </p>
             </div>
             <div class="storyline_cards-buttons">
-              <button>Trailer</button>
-              <button>Testar</button>
+              <button class="cards_button button-trailer">Trailer</button>
+              <button class="cards_button button-testing">Testar</button>
             </div>
           </div>
         </div>
 
         <div class="container_storyline-card ">
-          <picture>
-            <img src="/img/containerMain/stoyline/imgFrente.png" alt="">
-          </picture>
           <div class="content_storyline-card storyline_backgroundImage-tree">
             <div class="storyline_cards-texts">
               <h2>Nome do curso 03</h2>
@@ -280,8 +272,8 @@
               </p>
             </div>
             <div class="storyline_cards-buttons">
-              <button>Trailer</button>
-              <button>Testar</button>
+              <button class="cards_button button-trailer">Trailer</button>
+              <button class="cards_button button-testing">Testar</button>
             </div>
           </div>
         </div>
@@ -292,16 +284,100 @@
 
     </section>
 
+    <section class="container_main-videosExample">
+
+      <div class="container_videoExample">
+        <div class="content_videoExample-title">
+          <h2>Vídeos Estúdio</h2>
+          <div class="content_videoExample-bars">
+            <div class="videoExample_bar-big"></div>
+            <div class="videoExample_bar-medium"></div>
+          </div>
+        </div>
+        <iframe src="" frameborder="0"></iframe>
+      </div>
+
+      <div class="container_videoExample">
+        <div class="content_videoExample-title">
+          <h2>Banco de Videos</h2>
+          <div class="content_videoExample-bars">
+            <div class="videoExample_bar-big"></div>
+            <div class="videoExample_bar-medium"></div>
+          </div>
+        </div>
+        <iframe src="" frameborder="0"></iframe>
+      </div>
+
+    </section>
+
+    <section class="container_main-videosAnimation">
+      <h2>Vídeos Animação</h2>
+      <div class="container_videosAnimation-grid">
+        <div class="content_videosAnimation-video videosAnimation-videoOne ">
+          <iframe src="" frameborder="0"></iframe>
+        </div>
+        <div class="content_videosAnimation-video videosAnimation-videoTwo ">
+          <iframe src="" frameborder="0"></iframe>
+        </div>
+        <div class="content_videosAnimation-video videosAnimation-videoTree ">
+          <iframe src="" frameborder="0"></iframe>
+        </div>
+        <div class="content_videosAnimation-video videosAnimation-videoFour ">
+          <iframe src="" frameborder="0"></iframe>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
+  <footer class="container_footer">
+
+    <h2>Gostou do que viu até aqui?</h2>
+
+    <div class="container_footer-contacts">
+
+      <div class="container_contacts-infos">
+        <i class="fa fa-phone"></i>
+        <div class="contacts_infos">
+          <h2>Nosso Telefone:</h2>
+          <p>+55 ( 47 ) 3209-6667</p>
+        </div>
+      </div>
+
+      <div class="container_contacts-infos">
+        <i class="fa fa-envelope"></i>
+        <div class="contacts_infos">
+          <h2>Nosso E-mail:</h2>
+          <p>felipe@toteduca.com.br</p>
+        </div>
+      </div>
+
+      <div class="container_contacts-infos">
+        <i class="fa fa-map-pin"></i>
+        <div class="contacts_infos">
+          <h2>Onde estamos:</h2>
+          <p>R. 7 de Setembro, 1760 Centro, Blumenau</p>
+        </div>
+      </div>
+
+    </div>
+
+    <h2>Veja nossas Redes Sociais:</h2>
+
+    <ul class="container_footer-list">
+      <li class="footer_list-itens "></li>
+      <li class="footer_list-itens fa fa-instagram"></li>
+      <li class="footer_list-itens fa fa-linkedin"></li>
+      <li class="footer_list-itens fa fa-youtube"></li>
+      <li class="footer_list-itens fa fa-whatsapp"></li>
+    </ul>
 
   </footer>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-   Google Analytics: change UA-XXXXX-Y to be your site's ID. 
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () {
       ga.q.push(arguments)

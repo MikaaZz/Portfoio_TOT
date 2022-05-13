@@ -31,19 +31,23 @@
 
       transition: $mainTransitionTime;
 
+      .storyline_backgroundImage-one {
+        background-image: url(../../../img/containerMain/stoyline/imgFrente.png);
+      }
 
+      .storyline_backgroundImage-two {
+        background-image: url(../../../img/containerMain/stoyline/imgFrente.png);
+      }
 
-      img {
-        display: block;
-
-        transition: $mainTransitionTime;
-
+      .storyline_backgroundImage-tree {
+        background-image: url(../../../img/containerMain/stoyline/imgFrente.png);
       }
 
       .content_storyline-card {
         align-items: flex-start;
-        display: none;
+        display: flex;
         flex-direction: column;
+        justify-content: flex-end;
 
         background-position: center;
         background-repeat: no-repeat;
@@ -51,18 +55,20 @@
 
         transition: $mainTransitionTime;
 
+
         padding: 2rem;
 
-        border-radius: 25px;
 
-        height: 270px;
 
-        width: 450px;
+        @include heigthSize (270px);
+        @include widthSize (200px);
 
         .storyline_cards-texts {
           align-items: flex-start;
           display: flex;
           flex-direction: column;
+
+          opacity: 0;
 
           h2 {
             font-style: normal;
@@ -84,15 +90,57 @@
             color: $whiteFontColor;
           }
         }
+
+        .storyline_cards-buttons {
+          align-items: center;
+          display: flex;
+
+          opacity: 0;
+
+          .cards_button {
+            background-color: $whiteColor;
+
+            color: $orangeFontColor;
+
+            font-size: $smallButtonFontSize;
+            font-weight: $boldFont;
+
+            border: none;
+            border-radius: 25px;
+
+            cursor: pointer;
+
+            transition: $mainTransitionTime;
+
+            &:hover {
+              color: $gradientOrangePurple;
+              transform: scale(1.1);
+            }
+          }
+
+          .button-trailer {
+            padding: 0.5rem 2rem;
+            margin-right: 0.5rem;
+          }
+
+          .button-testing {
+            padding: 0.5rem 3rem;
+          }
+        }
       }
 
       &:hover {
-        img {
-          display: none;
-        }
-
         .content_storyline-card {
-          display: flex;
+          border-radius: 25px;
+          @include widthSize (280px);
+
+          .storyline_cards-texts {
+            opacity: 1;
+          }
+
+          .storyline_cards-buttons {
+            opacity: 1;
+          }
         }
 
         .storyline_backgroundImage-one {

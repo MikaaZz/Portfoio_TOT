@@ -4,12 +4,13 @@
   flex-direction: column;
   justify-content: space-around;
 
+  margin: 2rem 0;
 
   h2 {
-      color: $whiteFontColor;
-      @include fontSize ($subTitleFontSize);
+    color: $whiteFontColor;
+    @include fontSize ($subTitleFontSize);
 
-      margin: 0;
+    margin: 0;
   }
 
   .container_cursosPrateleira-cards {
@@ -51,7 +52,8 @@
       background-size: contain;
 
       .cursosPrateleira_cards-text {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
 
         position: relative;
         top: 2rem;
@@ -65,7 +67,7 @@
 
         transition: $mainTransitionTime;
 
-        
+
 
         h4 {
           font-weight: $boldFont;
@@ -81,15 +83,20 @@
           font-weight: $regularFont;
           @include fontSize ($paragraphCardsFontSize);
           line-height: 16px;
-          
+
           color: $blackFontColor;
 
           margin: 1rem;
         }
       }
+
       &:hover {
+
+        transform: scale(1.02);
+        
         .cursosPrateleira_cards-text {
-            display: block;
+          visibility: visible;
+          opacity: 1;
         }
       }
     }

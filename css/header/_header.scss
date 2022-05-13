@@ -81,14 +81,15 @@
         font-weight: $boldFont;
         margin: 0;
         text-align: right;
-        line-height: 160px;
+        line-height: 100px;
       }
 
       .content_animation {
         align-items: center;
         display: flex;
+        justify-content: center;
         overflow: hidden;
-        @include heigthSize (140px);
+        @include heigthSize (100px);
 
         .content_animation-list {
           margin: 0;
@@ -159,6 +160,7 @@
       h2 {
         display: none;
         color: $whiteFontColor;
+        font-size: $highlightTitleFontSize;
       }
 
       &:hover {

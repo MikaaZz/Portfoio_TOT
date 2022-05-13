@@ -16,7 +16,7 @@
     transform: matrix(1, 0, 0, -1, 0, 0);
     
     @include heigthSize (90px);
-    @include widthSize (1024px);
+    width: 100vw;
 
     margin: 0;
     padding: 0;
@@ -25,8 +25,9 @@
   .content_shadowTransition-bottom {
     background: $gradientTransition;
     transform: matrix(1, 0, 0, -1, 0, 0);
+    
     @include heigthSize (90px);
-    @include widthSize (1024px);
+    width: 100vw;
 
     transform: rotate(1turn);
 
