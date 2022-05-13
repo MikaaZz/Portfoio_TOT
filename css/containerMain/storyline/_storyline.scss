@@ -20,6 +20,8 @@
 
     transition: $mainTransitionTime;
 
+    @include widthSize (1024px);
+
     .container_storyline-card {
       align-items: center;
       display: flex;

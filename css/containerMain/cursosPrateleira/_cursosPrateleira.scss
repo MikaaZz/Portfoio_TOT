@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: space-around;
 
+
   h2 {
       color: $whiteFontColor;
       @include fontSize ($subTitleFontSize);
@@ -15,6 +16,9 @@
     align-items: center;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+
+    @include widthSize (1024px);
 
 
     .background_image-one {

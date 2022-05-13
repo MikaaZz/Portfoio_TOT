@@ -2,18 +2,21 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   background-image: url(../../../img/containerMain/smartPages/bgDois.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
+  width: 100vw;
+
   .content_shadowTransition-top {
     background: $gradientTransition;
     transform: matrix(1, 0, 0, -1, 0, 0);
     
     @include heigthSize (90px);
-    @include widthSize (1920px);
+    @include widthSize (1024px);
 
     margin: 0;
     padding: 0;
@@ -23,7 +26,7 @@
     background: $gradientTransition;
     transform: matrix(1, 0, 0, -1, 0, 0);
     @include heigthSize (90px);
-    @include widthSize (1920px);
+    @include widthSize (1024px);
 
     transform: rotate(1turn);
 
@@ -44,6 +47,8 @@
     flex-direction: row;
     justify-content: space-around;
 
+    @include widthSize (1024px);
+
 
     .content_smartPage-cards {
       align-items: center;
@@ -56,15 +61,15 @@
 
       margin: 2rem;
 
-      @include widthSize (320px);
+      @include widthSize (280px);
 
       .smartPage_cards-images {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
 
-        @include heigthSize (320px);
-        @include widthSize (320px);
+        @include heigthSize (280px);
+        @include widthSize (280px);
       
       }
 

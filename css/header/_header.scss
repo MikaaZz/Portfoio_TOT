@@ -1,19 +1,36 @@
 .container_header--nav {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
   background-image: url(../../img/header/bg_header.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
+  width: 100vw;
+
+  margin: 0 2rem;
+
   .container_imgMenu {
-    align-items: flex-end;
+    align-items: flex-start;
     display: flex;
-    justify-content: space-around;
-    margin: 0 5%;
+    justify-content: space-between;
+
+    @include widthSize (1024px);
+
+    picture {
+      img {
+        margin:1rem 2rem;
+      }
+    }
 
     .menu_nav {
       align-items: center;
       display: flex;
       justify-content: space-around;
+
+      margin: 0 2rem 0 0 ;
 
       .menu_nav--button {
         color: $whiteFontColor;
@@ -30,7 +47,7 @@
 
         font-weight: $regularFont;
 
-        margin: 0 1rem;
+        margin: 0 0 0 2rem;
 
         transition: $mainTransitionTime;
 
@@ -48,6 +65,8 @@
     display: flex;
     justify-content: center;
     margin: 3.5rem 0 2rem 0;
+
+    @include widthSize (1024px);
 
     .titles_header {
       align-items: flex-end;
@@ -113,6 +132,8 @@
     display: flex;
     justify-content: center;
 
+    @include widthSize (1024px);
+
     .cardHeader {
       align-items: center;
       display: flex;
@@ -126,8 +147,8 @@
       text-align: center;
       transition: $mainTransitionTime;
 
-      width: 250px;
-      height: 100px;
+      @include widthSize (250px);
+      @include heigthSize (100px);
 
       margin: 5%;
 

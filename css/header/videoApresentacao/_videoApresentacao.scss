@@ -8,14 +8,16 @@
   display: flex;
   justify-content: center;
 
-  margin: 5rem 15rem;
+  @include widthSize (1024px);
 
   .container_videoPresentation-description {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
 
-    margin: 2rem;
+    width: 50%;
+
+    margin: 1rem 1rem 1rem 2rem;
 
     .content_description-title {
       color: $whiteFontColor;
@@ -46,7 +48,7 @@
       &:hover {
         transform: scale(1.1);
       }
-    }
+    } 
   }
 
   .container_videoPresentation-video {
@@ -54,11 +56,15 @@
     display: flex;
     justify-content: center;
 
+    width: 50%;
+
+    margin: 1rem 2rem 1rem 1rem;
+
     .content_video-iframe {
       border-radius: 25px;
 
-      @include heigthSize (350px);
-      @include widthSize (620px);
+      @include heigthSize (250px);
+      @include widthSize (450px);
 
       z-index: 2;
 
@@ -86,12 +92,12 @@
         margin: 0;
         padding: 1.5rem 0.5rem;
 
-        @include heigthSize (300px);
+        @include heigthSize (200px);
 
         li {
           color: #fff;
-          line-height: 15px;
-          @include fontSize(20px);
+          line-height: 10px;
+          @include fontSize(16px);
           font-weight: $boldFont;
 
           text-align: center;
