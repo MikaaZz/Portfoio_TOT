@@ -24,7 +24,7 @@
 
       h2 {
         color: $whiteFontColor;
-        font-size: $subTitleFontSize;
+        @include fontSize ($subTitleFontSize);
         margin: 0;
       }
 
@@ -65,5 +65,26 @@
 
   .alignReverse {
     align-items: flex-end;
+  }
+}
+
+@media (max-width:768px) {
+  .container_main-videosExample {
+
+    .container_videoExample {
+
+      @include widthSize (768px);
+      align-items: center;
+
+      .content_videoExample-title {
+        h2 {
+          @include fontSize (48px);
+        }
+        
+        .content_videoExample-bars {
+          display: none;
+        }
+      }
+    }
   }
 }

@@ -98,3 +98,28 @@
     }
   }
 }
+@media (max-width:768px) {
+  .container_footer {
+    .container_footer-title {
+      @include fontSize(48px);
+    }
+    .container_footer-contacts {
+      align-items: center;
+      flex-direction: column;
+      .container_contacts-infos {
+        i {
+          @include fontSize (28px);
+        }
+        .contacts_infos {
+          text-align: center;
+          h2 {
+            @include fontSize (24px);
+          }
+          p {
+            @include fontSize (16px);
+          }
+        }
+      }
+    }
+  }
+}

@@ -178,3 +178,41 @@
     }
   }
 }
+
+@media (max-width:768px) {  
+  .container_header--nav {
+    .container_imgMenu {
+      @include widthSize (768px);
+      align-items: center;
+      justify-content: center;
+      .menu_nav {
+        display: none;
+      }
+    }
+    .container_titleAndImg {
+      @include widthSize (768px);
+      flex-direction: column;
+      margin: 2rem 0;
+
+      .titles_header {
+        align-items: center;
+        margin-bottom:1rem;
+
+        h1,h2,li {
+
+          text-align: center;
+          @include fontSize(80px);
+        }
+      }
+    }
+    .container_cardsHeader {
+      flex-direction: column;
+
+      @include widthSize (768px);
+
+      .cardHeader {
+        margin: 1rem;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 // Font sizes
 
 $titleFontSize : 100px;
-$subTitleFontSize: 60px; 
+$subTitleFontSize: 60px;
 $highlightTitleFontSize: 32px;
 
 $paragraphFontSize: 14px;
@@ -11,7 +11,7 @@ $paragraphCardsFontSize: 14px;
 
 $bigButtonFontSize: 32px;
 $mediumButtonFontSize: 18px;
-$smallButtonFontSize: 14px; 
+$smallButtonFontSize: 14px;
 
 // Font-weight
 
@@ -44,3 +44,21 @@ $videoBoxShadow: 5px 10px 20px rgba(0, 0, 0, 0.8);
 // Transition
 
 $mainTransitionTime: all 250ms ease-in-out;
+
+@media (max-width:768px) {
+  // Font sizes
+
+  $titleFontSize: 80px;
+  $subTitleFontSize: 50px;
+  $highlightTitleFontSize: 24px;
+
+  $paragraphFontSize: 12px;
+
+  $titleCardsFontSize: 14px;
+  $paragraphCardsFontSize: 12px;
+
+  $bigButtonFontSize: 24px;
+  $mediumButtonFontSize: 14px;
+  $smallButtonFontSize: 12px;
+
+}

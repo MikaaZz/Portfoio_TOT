@@ -1,8 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Portfólio TOT</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +15,7 @@
 
   <link rel="manifest" href="site.webmanifest">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/main/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -26,16 +27,15 @@
 
     <nav class="container_imgMenu">
       <picture>
-
         <img src="./img/header/Logo_150_55.png" alt="Logo TOT">
       </picture>
       <div class="menu_nav">
-        <a href="#contactTheTeam">
+        <a href="#contactTheTeam" tabindex="1">
           <button class="menu_nav--button">
             <h2>Entre em contato</h2>
           </button>
         </a>
-        <a href="#casesSmartPages">
+        <a href="#casesSmartPages" tabindex="2">
           <button class="menu_nav--button">
             <h2>Cases</h2>
           </button>
@@ -65,7 +65,7 @@
       <picture>
         <source media="(max-width:414px)" srcset="/img/header/macacoPortifaSmall.png">
         <source media="(max-width:968px)" srcset="/img/header/macacoPortifaMedium.png">
-        <img src="./img/header/macacoPortifaMedium.png" alt="Icone TOT">
+        <img src="./img/header/macacoPortifaMedium.png" alt="Icone TOT redondo com escrita interior ( Portifa )">
       </picture>
 
     </section>
@@ -74,7 +74,7 @@
 
       <div class="cardHeader">
         <picture>
-          <img src="./img/header/Icone01.png" alt="Icone cursos de prateleira">
+          <img src="./img/header/Icone01.png" alt="Icone cursos de Prateleira">
         </picture>
         <h2>Cursos de Prateleira</h2>
       </div>
@@ -109,8 +109,10 @@
 
       <div class="container_videoPresentation-video">
         <div class="content_video-iframe">
-          <iframe src="https://player.vimeo.com/video/680097709?h=4e8544dc70&muted=1&autoplay=1&loop=1" frameborder="0"
-            allow="autoplay; fullscreen" allowfullscreen></iframe>
+          <video src="./img/header/videoApresentacao/microlearning_7_principios_-_cena_01 (1080p).mp4" loop autoplay
+            controls="on" muted>
+
+          </video>
         </div>
         <div class="container_video-list">
           <ul class="content_video-list">
@@ -132,47 +134,56 @@
   </header>
 
   <main>
+
     <section class="container_main-cursosPrateleira">
 
       <h2>Cursos de Prateleira</h2>
 
       <div class="container_cursosPrateleira-cards">
-        <a target="_blank" href="https://toteduca.com.br/curso-tomada-de-decisao/">
-          <div class="content_cursosPrateleira-cards background_image-one ">
 
-            <div class="cursosPrateleira_cards-text">
-              <h4>Tomada de Decisão</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam vitae penatibus eget et cras. Cras
-                eget
-                vestibulum ornare accumsan purus scelerisq ue sed id sit.</p>
+        <div class="container_cursosPrateleira-animate">
+
+          <a target="_blank" href="https://toteduca.com.br/curso-tomada-de-decisao/">
+            <div class="content_cursosPrateleira-cards background_image-one ">
+
+              <div class="cursosPrateleira_cards-text">
+                <h4>Tomada de Decisão</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam vitae penatibus eget et cras. Cras
+                  eget
+                  vestibulum ornare accumsan purus scelerisq ue sed id sit.</p>
+              </div>
+
             </div>
+          </a>
 
-          </div>
-        </a>
-        <a target="_blank" href="https://toteduca.com.br/sustentabilidade-empresarial-microlearning/">
-          <div class="content_cursosPrateleira-cards background_image-two">
+          <a target="_blank" href="https://toteduca.com.br/sustentabilidade-empresarial-microlearning/">
+            <div class="content_cursosPrateleira-cards background_image-two">
 
-            <div class="cursosPrateleira_cards-text">
-              <h4>Sustentabilidade</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam vitae penatibus eget et cras. Cras
-                eget
-                vestibulum ornare accumsan purus scelerisq ue sed id sit.</p>
+              <div class="cursosPrateleira_cards-text">
+                <h4>Sustentabilidade</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam vitae penatibus eget et cras. Cras
+                  eget
+                  vestibulum ornare accumsan purus scelerisq ue sed id sit.</p>
+              </div>
+
             </div>
+          </a>
 
-          </div>
-        </a>
-        <a target="_blank" href="https://toteduca.com.br/engenharia-social-e-riscos-ciberneticos/">
-          <div class="content_cursosPrateleira-cards background_image-tree">
+          <a target="_blank" href="https://toteduca.com.br/engenharia-social-e-riscos-ciberneticos/">
+            <div class="content_cursosPrateleira-cards background_image-tree">
 
-            <div class="cursosPrateleira_cards-text">
-              <h4>Engenharia Social</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam vitae penatibus eget et cras. Cras
-                eget
-                vestibulum ornare accumsan purus scelerisq ue sed id sit.</p>
+              <div class="cursosPrateleira_cards-text">
+                <h4>Engenharia Social</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam vitae penatibus eget et cras. Cras
+                  eget
+                  vestibulum ornare accumsan purus scelerisq ue sed id sit.</p>
+              </div>
+
             </div>
+          </a>
 
-          </div>
-        </a>
+        </div>
+
       </div>
 
 
@@ -186,46 +197,49 @@
       <h2>Smart Pages</h2>
 
       <div class="container_smartPage-cards">
+        <div class="container_smartPage-animate">
+          <div class="content_smartPage-cards">
+            <div class="smartPage_cards-images smartPage_cards-imageOne"></div>
+            <div class="smartPage_cards-text">
+              <h4>Líder do Agora:</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam vitae penatibus eget et cras. Cras
+                eget
+                vestibulum ornare accumsan purus scelerisq ue sed id sit.</p>
+              <a target="_blank"
+                href="https://www.figma.com/proto/FX73OTkGK7Vo7wgw1hhkun/LiderDoAgoraMobile?node-id=7%3A116&scaling=scale-down&page-id=0%3A1&starting-point-node-id=7%3A116">
+                <button class="smartPage_cards-button">Ver mais</button>
+              </a>
+            </div>
+          </div>
 
-        <div class="content_smartPage-cards">
-          <div class="smartPage_cards-images smartPage_cards-imageOne"></div>
-          <div class="smartPage_cards-text">
-            <h4>Líder do Agora:</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam vitae penatibus eget et cras. Cras
-              eget
-              vestibulum ornare accumsan purus scelerisq ue sed id sit.</p>
-            <a target="_blank" href="https://www.figma.com/proto/FX73OTkGK7Vo7wgw1hhkun/LiderDoAgoraMobile?node-id=7%3A116&scaling=scale-down&page-id=0%3A1&starting-point-node-id=7%3A116">
-              <button class="smartPage_cards-button">Ver mais</button>
-            </a>
+          <div class="content_smartPage-cards">
+            <div class="smartPage_cards-images smartPage_cards-imageTwo"></div>
+            <div class="smartPage_cards-text">
+              <h4>Unicred</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam vitae penatibus eget et cras. Cras
+                eget
+                vestibulum ornare accumsan purus scelerisq ue sed id sit.</p>
+              <a target="_blank"
+                href="https://www.figma.com/proto/ahnU4iTkGak77P5zxLqO1d/Prototipo-Comercial-Desktop?node-id=2%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2&show-proto-sidebar=1">
+                <button class="smartPage_cards-button">Ver mais</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="content_smartPage-cards">
+            <div class="smartPage_cards-images smartPage_cards-imageTree"></div>
+            <div class="smartPage_cards-text">
+              <h4>Ailos Sustentabilidade</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam vitae penatibus eget et cras. Cras
+                eget
+                vestibulum ornare accumsan purus scelerisq ue sed id sit.</p>
+              <a target="_blank"
+                href="https://www.figma.com/proto/JF2CZzkJPc3Pt4P7gzDV5N/Prot%C3%B3tipo-Sustentabilidade-Ailos-2?page-id=0%3A1&node-id=123%3A98&starting-point-node-id=123%3A98&scaling=scale-down">
+                <button class="smartPage_cards-button">Ver mais</button>
+              </a>
+            </div>
           </div>
         </div>
-
-        <div class="content_smartPage-cards">
-          <div class="smartPage_cards-images smartPage_cards-imageTwo"></div>
-          <div class="smartPage_cards-text">
-            <h4>Unicred</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam vitae penatibus eget et cras. Cras
-              eget
-              vestibulum ornare accumsan purus scelerisq ue sed id sit.</p>
-            <a target="_blank" href="https://www.figma.com/proto/ahnU4iTkGak77P5zxLqO1d/Prototipo-Comercial-Desktop?node-id=2%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2&show-proto-sidebar=1">
-              <button class="smartPage_cards-button">Ver mais</button>
-            </a>
-          </div>
-        </div>
-
-        <div class="content_smartPage-cards">
-          <div class="smartPage_cards-images smartPage_cards-imageTree"></div>
-          <div class="smartPage_cards-text">
-            <h4>Ailos Sustentabilidade</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam vitae penatibus eget et cras. Cras
-              eget
-              vestibulum ornare accumsan purus scelerisq ue sed id sit.</p>
-            <a target="_blank" href="https://www.figma.com/proto/JF2CZzkJPc3Pt4P7gzDV5N/Prot%C3%B3tipo-Sustentabilidade-Ailos-2?page-id=0%3A1&node-id=123%3A98&starting-point-node-id=123%3A98&scaling=scale-down">
-              <button class="smartPage_cards-button">Ver mais</button>
-            </a>
-          </div>
-        </div>
-
       </div>
 
       <div class="content_shadowTransition-bottom"></div>
@@ -240,55 +254,73 @@
 
       <div class="container_storyline-cards">
 
-        <div class="container_storyline-card ">
-          <div class="content_storyline-card storyline_backgroundImage-one">
-            <div class="storyline_cards-texts">
-              <h2>Nome do curso 01</h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem iure, dolores ex quasi hic quos beatae
-                voluptatem odio cupiditate ad perferendis, aperiam quae debitis amet est explicabo doloribus nulla
-                pariatur.
-              </p>
+        <div class="container_storyline-animate">
+          <a href="">
+            <div class="container_storyline-card ">
+              <div class="content_storyline-card storyline_backgroundImage-one">
+                <div class="storyline_cards-texts" role="textbox">
+                  <h2>Nome do curso 01</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem iure, dolores ex quasi hic quos beatae
+                    voluptatem odio cupiditate ad perferendis, aperiam quae debitis amet est explicabo doloribus nulla
+                    pariatur.
+                  </p>
+                </div>
+                <div class="storyline_cards-buttons">
+                  <a target="_blank" href="">
+                    <button class="cards_button button-trailer">Trailer</button>
+                  </a>
+                  <a target="_blank" href="">
+                    <button class="cards_button button-testing">Testar</button>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="storyline_cards-buttons">
-              <button class="cards_button button-trailer">Trailer</button>
-              <button class="cards_button button-testing">Testar</button>
+          </a>
+          <a href="">
+            <div class="container_storyline-card ">
+              <div class="content_storyline-card storyline_backgroundImage-two">
+                <div class="storyline_cards-texts" role="textbox">
+                  <h2>Nome do curso 02</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem iure, dolores ex quasi hic quos beatae
+                    voluptatem odio cupiditate ad perferendis, aperiam quae debitis amet est explicabo doloribus nulla
+                    pariatur.
+                  </p>
+                </div>
+                <div class="storyline_cards-buttons">
+                  <a target="_blank" href="">
+                    <button class="cards_button button-trailer">Trailer</button>
+                  </a>
+                  <a target="_blank" href="">
+                    <button class="cards_button button-testing">Testar</button>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="container_storyline-card ">
-          <div class="content_storyline-card storyline_backgroundImage-two">
-            <div class="storyline_cards-texts">
-              <h2>Nome do curso 02</h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem iure, dolores ex quasi hic quos beatae
-                voluptatem odio cupiditate ad perferendis, aperiam quae debitis amet est explicabo doloribus nulla
-                pariatur.
-              </p>
+          </a>
+          <a href="">
+            <div class="container_storyline-card ">
+              <div class="content_storyline-card storyline_backgroundImage-tree">
+                <div class="storyline_cards-texts" role="textbox">
+                  <h2>Nome do curso 03</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem iure, dolores ex quasi hic quos beatae
+                    voluptatem odio cupiditate ad perferendis, aperiam quae debitis amet est explicabo doloribus nulla
+                    pariatur.
+                  </p>
+                </div>
+                <div class="storyline_cards-buttons">
+                  <a target="_blank" href="">
+                    <button class="cards_button button-trailer">Trailer</button>
+                  </a>
+                  <a target="_blank" href="">
+                    <button class="cards_button button-testing">Testar</button>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="storyline_cards-buttons">
-              <button class="cards_button button-trailer">Trailer</button>
-              <button class="cards_button button-testing">Testar</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="container_storyline-card ">
-          <div class="content_storyline-card storyline_backgroundImage-tree">
-            <div class="storyline_cards-texts">
-              <h2>Nome do curso 03</h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem iure, dolores ex quasi hic quos beatae
-                voluptatem odio cupiditate ad perferendis, aperiam quae debitis amet est explicabo doloribus nulla
-                pariatur.
-              </p>
-            </div>
-            <div class="storyline_cards-buttons">
-              <button class="cards_button button-trailer">Trailer</button>
-              <button class="cards_button button-testing">Testar</button>
-            </div>
-          </div>
+          </a>
         </div>
 
       </div>
@@ -333,20 +365,16 @@
       <h2>Vídeos Animação</h2>
       <div class="container_videosAnimation-grid">
         <div class="content_videosAnimation-video videosAnimation-videoOne ">
-          <video src="./img/containerMain/videosAnimacao/Gif_01.mp4" height="180" width="400" loop autoplay
-            controls="on"></video>
+          <video src="./img/containerMain/videosAnimacao/Gif_01.mp4" loop autoplay controls="on"></video>
         </div>
         <div class="content_videosAnimation-video videosAnimation-videoTwo ">
-          <video src="./img/containerMain/videosAnimacao/Gif_02.mp4" height="190" width="400" loop autoplay
-            controls="on"></video>
+          <video src="./img/containerMain/videosAnimacao/Gif_02.mp4" loop autoplay controls="on"></video>
         </div>
         <div class="content_videosAnimation-video videosAnimation-videoTree ">
-          <video src="./img/containerMain/videosAnimacao/Gif_03.mp4" height="400" width="400" loop autoplay
-            controls="on"></video>
+          <video src="./img/containerMain/videosAnimacao/Gif_03.mp4" loop autoplay controls="on"></video>
         </div>
         <div class="content_videosAnimation-video videosAnimation-videoFour ">
-          <video src="./img/containerMain/videosAnimacao/Gif_04.mp4" height="180" width="800" loop autoplay
-            controls="on"></video>
+          <video src="./img/containerMain/videosAnimacao/Gif_04.mp4" loop autoplay controls="on"></video>
         </div>
       </div>
     </section>
@@ -358,47 +386,81 @@
     <h2 class="container_footer-title">Gostou do que viu até aqui?</h2>
 
     <div class="container_footer-contacts">
-
-      <div class="container_contacts-infos">
-        <i class="fa fa-phone"></i>
-        <div class="contacts_infos">
-          <h2>Nosso Telefone:</h2>
-          <p>+55 ( 47 ) 3209-6667</p>
+      <a href="tel:+554732096667">
+        <div class="container_contacts-infos">
+          <i class="fa fa-phone"></i>
+          <div class="contacts_infos">
+            <h2>Nosso Telefone:</h2>
+            <p>+55 ( 47 ) 3209-6667</p>
+          </div>
         </div>
-      </div>
-
-      <div class="container_contacts-infos">
-        <i class="fa fa-envelope"></i>
-        <div class="contacts_infos">
-          <h2>Nosso E-mail:</h2>
-          <p>contato@toteduca.com.br</p>
+      </a>
+      <a href="mailto:contato@toteduca.com.br">
+        <div class="container_contacts-infos">
+          <i class="fa fa-envelope"></i>
+          <div class="contacts_infos">
+            <h2>Nosso E-mail:</h2>
+            <p>contato@toteduca.com.br</p>
+          </div>
         </div>
-      </div>
-
-      <div class="container_contacts-infos">
-        <i class="fa fa-map-pin"></i>
-        <div class="contacts_infos">
-          <h2>Onde estamos:</h2>
-          <p>R. 7 de Setembro, 1760 Centro, Blumenau</p>
+      </a>
+      <a target="_blank"
+        href="https://www.google.com/maps/place/TOT+-+Educa%C3%A7%C3%A3o+Corporativa+de+Impacto/@-26.9164086,-49.0716688,15z/data=!4m2!3m1!1s0x0:0x28823f61786dd8e2?sa=X&ved=2ahUKEwiFh62Go-n3AhVbtJUCHazPB-kQ_BJ6BAhPEAU">
+        <div class="container_contacts-infos">
+          <i class="fa fa-map-pin"></i>
+          <div class="contacts_infos">
+            <h2>Onde estamos:</h2>
+            <p>R. 7 de Setembro, 1760 Centro, Blumenau</p>
+          </div>
         </div>
-      </div>
+      </a>
 
     </div>
+
+    <!-- Rodape com os icones das Redes Sociais -->
 
     <h2 class="container_footer-subtitle">Veja nossas Redes Sociais:</h2>
 
     <div class="container_footer-list">
-      <i class="backFooter_list-itens footer_list-itens fa fa-facebook"></i>
-      <i class="backFooter_list-itens footer_list-itens fa fa-instagram"></i>
-      <i class="backFooter_list-itens footer_list-itens fa fa-linkedin"></i>
-      <i class="backFooter_list-itens footer_list-itens fa fa-youtube"></i>
-      <i class="backFooter_list-itens footer_list-itens fa fa-whatsapp"></i>
+      <a target="_blank" href="https://www.instagram.com/toteduca/">
+        <i class="backFooter_list-itens footer_list-itens fa fa-instagram"></i>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/company/toteduca/">
+        <i class="backFooter_list-itens footer_list-itens fa fa-linkedin"></i>
+      </a>
+      <a target="_blank" href="https://www.youtube.com/channel/UCOc2IK7xO3UgdCBGHFPRInA"><i
+          class="backFooter_list-itens footer_list-itens fa fa-youtube"></i>
+      </a>
+      <a target="_blank" href="https://www.facebook.com/toteduca/">
+        <i class="backFooter_list-itens footer_list-itens fa fa-facebook"></i>
+      </a>
+      <a target="_blank" href="https://api.whatsapp.com/send?phone=5547991399702">
+        <i class="backFooter_list-itens footer_list-itens fa fa-whatsapp"></i>
+      </a>
     </div>
 
   </footer>
+
+  <!-- Chamando o Leitor em libras -->
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+
+  </script>
+
+  <!-- Chama de Scripts padrões do HTML BooilerPlate-->
+
   <script src="https://player.vimeo.com/api/player.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

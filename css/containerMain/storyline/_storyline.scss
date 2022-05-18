@@ -22,6 +22,10 @@
 
     @include widthSize (1024px);
 
+    .container_storyline-animate {
+      display: flex;
+    }
+
     .container_storyline-card {
       align-items: center;
       display: flex;
@@ -155,6 +159,44 @@
           background-image: url(../../../img/containerMain/stoyline/imgVerso.png);
         }
 
+      }
+    }
+  }
+}
+
+@media (max-width:768px) {
+
+  .container_main-storyline {
+    h2 {
+      @include fontSize (48px);
+    }
+
+    .container_storyline-cards {
+      height: 600px;
+      width: 400px;
+
+      overflow: hidden;
+
+      .container_storyline-animate {
+        animation-duration: 15s;
+        animation-name: sliderAnimateStoyline;
+        animation-iteration-count: infinite;
+
+        @keyframes sliderAnimateStoyline {
+
+          0%,
+          100% {
+            transform: translateX(-35%);
+          }
+
+          33% {
+            transform: translateX(0);
+          }
+
+          66% {
+            transform: translateX(35%);
+          }
+        }
       }
     }
   }

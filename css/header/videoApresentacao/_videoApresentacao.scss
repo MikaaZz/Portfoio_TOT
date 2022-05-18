@@ -31,26 +31,6 @@
       color: $whiteFontColor;
       @include fontSize($paragraphFontSize);
     }
-
-    .content_description-button {
-      background-color: $whiteColor;
-      border: none;
-      border-radius: 30px;
-
-      color: $orangeFontColor;
-
-      line-height: 28px;
-      @include fontSize($mediumButtonFontSize);
-      font-weight: $boldFont;
-
-      padding: 0.8rem 6rem;
-
-      transition: $mainTransitionTime;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    } 
   }
 
   .container_videoPresentation-video {
@@ -70,11 +50,10 @@
 
       z-index: 2;
 
-      iframe {
+      video {
         border-radius: 25px 0px 0px 25px;
         box-shadow: $videoBoxShadow;
         height: 100%;
-        width: 100%;
       }
     }
 
@@ -112,4 +91,32 @@
   }
 
 
+}
+
+@media (max-width:768px) {
+  .container_main-videoPresentation {
+    flex-direction: column;
+
+
+    @include widthSize (768px);
+
+    .container_videoPresentation-description {
+      align-items: center;
+      width: 80%;
+      margin: 1rem;
+
+      text-align: center;
+
+      .container_videoPresentation-video {
+        flex-direction: column;
+        width: 100%;
+
+        .content_video-iframe {
+          video {
+            @include widthSize (500px);
+          }
+        }
+      }
+    }
+  }
 }

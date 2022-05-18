@@ -9,8 +9,6 @@
   background-size: cover;
   background-position: center;
 
-  width: 100vw;
-
   h2 {
     color: $whiteFontColor;
     @include fontSize ($subTitleFontSize);
@@ -24,8 +22,9 @@
     flex-direction: row;
     justify-content: space-around;
 
-    @include widthSize (1024px);
-
+    .container_smartPage-animate {
+      display: flex;
+    }
 
     .content_smartPage-cards {
       align-items: center;
@@ -47,7 +46,7 @@
 
         @include heigthSize (280px);
         @include widthSize (280px);
-      
+
       }
 
       .smartPage_cards-imageOne {
@@ -106,6 +105,44 @@
 
           &:hover {
             transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .container_main-smartPage {
+    h2 {
+      @include fontSize (48px);
+    }
+
+    .container_smartPage-cards {
+      height: 600px;
+      width: 400px;
+
+      overflow: hidden;
+
+      .container_smartPage-animate {
+
+        animation-duration: 15s;
+        animation-name: sliderAnimateSmartPages;
+        animation-iteration-count: infinite;
+
+        @keyframes sliderAnimateSmartPages {
+
+          0%,
+          100% {
+            transform: translateX(-35%);
+          }
+
+          33% {
+            transform: translateX(0);
+          }
+
+          66% {
+            transform: translateX(35%);
           }
         }
       }
