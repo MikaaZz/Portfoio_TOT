@@ -1,0 +1,68 @@
+.container_main-videosAnimation {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(180deg, #420E78 0%, rgba(0, 0, 0, 0) 100%);
+
+
+  h2 {
+    color: $whiteFontColor;
+    font-size: $subTitleFontSize;
+    margin: 1rem 0;
+  }
+
+  .container_videosAnimation-grid {
+    align-items: center;
+    justify-content: center;
+    
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+
+    overflow: hidden;
+
+
+    .videosAnimation-videoOne {
+      grid-column: span 1;
+      grid-row: span 1;
+
+      overflow: hidden;
+
+      box-shadow: $videoBoxShadow;
+      border-radius: 1rem;
+
+    }
+
+    .videosAnimation-videoTwo {
+      grid-column: span 1;
+      grid-row: span 1;
+
+      overflow: hidden;
+
+      box-shadow: $videoBoxShadow;
+      border-radius: 1rem;
+    }
+
+    .videosAnimation-videoTree {
+      grid-column: span 1;
+      grid-row: span 2;
+
+      overflow: hidden;
+
+      box-shadow: $videoBoxShadow;
+      border-radius: 1rem;
+    }
+
+    .videosAnimation-videoFour {
+      grid-column: span 2;
+      grid-row: span 1;
+
+      overflow: hidden;
+
+      box-shadow: $videoBoxShadow;
+      border-radius: 1rem;
+    }
+  }
+}

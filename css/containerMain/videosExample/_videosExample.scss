@@ -1,0 +1,69 @@
+.container_main-videosExample {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(180deg, #000000 0%, #420E78 100%);
+
+  .container_videoExample {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include widthSize (1024px);
+
+    .reverseBar {
+      flex-direction: row-reverse;
+    }
+
+    .content_videoExample-title {
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+
+      h2 {
+        color: $whiteFontColor;
+        font-size: $subTitleFontSize;
+        margin: 0;
+      }
+
+      .content_videoExample-bars {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+
+        .videoExample_bar-big {
+          background-color: #C4C4C4;
+          @include heigthSize (8px);
+          @include widthSize (350px);
+
+          margin: 0.5rem 2rem;
+        }
+
+        .videoExample_bar-medium {
+          background-color: #C4C4C4;
+          @include heigthSize (8px);
+          @include widthSize (200px);
+
+          margin: 0.5rem 2rem;
+        }
+
+      }
+    }
+
+    .iframe {
+
+      margin: 1rem;
+
+      iframe {
+        box-shadow: $videoBoxShadow;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  .alignReverse {
+    align-items: flex-end;
+  }
+}

@@ -9,8 +9,31 @@
 @import '../containerMain/cursosPrateleira/cursosPrateleira';
 @import '../containerMain/smartPages/smartPages';
 @import '../containerMain/storyline/storyline';
+@import '../containerMain/videosExample/videosExample';
+@import '../containerMain/videosAnimation/videosAnimation';
 
-@import'../footer/socialMediaIcons/_socialMediaIcons.scss'
+@import'../footer/footer';
 
+.content_shadowTransition-top {
+  background: $gradientTransition;
+  transform: matrix(1, 0, 0, -1, 0, 0);
 
+  @include heigthSize (90px);
+  width: 100vw;
 
+  margin: 0;
+  padding: 0;
+}
+
+.content_shadowTransition-bottom {
+  background: $gradientTransition;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+
+  @include heigthSize (90px);
+  width: 100vw;
+
+  transform: rotate(1turn);
+
+  margin: 0;
+  padding: 0;
+}
