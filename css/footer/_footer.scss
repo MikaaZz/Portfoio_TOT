@@ -86,40 +86,120 @@
 
       &:hover {
         background-color: grey;
-        background-image: radial-gradient(circle, rgba(238,89,35,1) 16%, rgba(140,35,123,1) 63%, rgba(140,35,123,0) 89%);
+        background-image: radial-gradient(circle, rgba(238, 89, 35, 1) 16%, rgba(140, 35, 123, 1) 63%, rgba(140, 35, 123, 0) 89%);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100% 100%;
 
-        transition:background-size .25s, background-color .25s;
+        transition: background-size .25s, background-color .25s;
 
         transform: scale(1.05);
       }
     }
   }
 }
+
 @media (max-width:768px) {
   .container_footer {
     .container_footer-title {
       @include fontSize(48px);
     }
+
     .container_footer-contacts {
       align-items: center;
       flex-direction: column;
+
       .container_contacts-infos {
         i {
           @include fontSize (28px);
         }
+
         .contacts_infos {
           text-align: center;
+
           h2 {
             @include fontSize (24px);
           }
+
           p {
             @include fontSize (16px);
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width:425px) {
+  .container_footer {
+
+    .container_footer-title {
+
+      text-align: center;
+
+      @include fontSize (36px);
+
+    }
+
+    .container_footer-contacts {
+
+      .container_contacts-infos {
+
+        i {
+          @include fontSize (24px);
+        }
+
+        .contacts_infos {
+
+          text-align: center;
+
+          h2 {
+
+            @include fontSize (20px);
+
+          }
+
+          p {
+
+            @include fontSize (14px);
+
+          }
+        }
+      }
+    }
+
+    .container_footer-subtitle {
+
+      @include fontSize (28px);
+
+    }
+
+    .container_footer-list {
+
+      flex-wrap: wrap;
+
+      .footer_list-itens {
+
+        margin: 1rem;
+
+        @include fontSize (22px);
+
+        @include heigthSize (50px);
+
+        @include widthSize (50px);
+      }
+    }
+  }
+}
+
+@media (max-width:375px) {
+  .container_footer {
+
+    .container_footer-subtitle {
+
+      text-align: center;
+
+      @include fontSize (24px);
     }
   }
 }

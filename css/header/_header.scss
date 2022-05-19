@@ -21,7 +21,7 @@
 
     picture {
       img {
-        margin:1rem 2rem;
+        margin: 1rem 2rem;
       }
     }
 
@@ -30,7 +30,7 @@
       display: flex;
       justify-content: space-around;
 
-      margin: 0 2rem 0 0 ;
+      margin: 0 2rem 0 0;
 
       .menu_nav--button {
         color: $whiteFontColor;
@@ -179,40 +179,153 @@
   }
 }
 
-@media (max-width:768px) {  
+@media (max-width:768px) {
   .container_header--nav {
+
     .container_imgMenu {
+
       @include widthSize (768px);
+
       align-items: center;
       justify-content: center;
+
       .menu_nav {
         display: none;
       }
     }
+
     .container_titleAndImg {
+
       @include widthSize (768px);
+
       flex-direction: column;
       margin: 2rem 0;
 
       .titles_header {
-        align-items: center;
-        margin-bottom:1rem;
 
-        h1,h2,li {
+        align-items: center;
+        margin-bottom: 1rem;
+
+        h1,
+        h2,
+        li {
 
           text-align: center;
           @include fontSize(80px);
         }
       }
     }
+
     .container_cardsHeader {
+
       flex-direction: column;
 
       @include widthSize (768px);
 
       .cardHeader {
         margin: 1rem;
+
+        img {
+          display: none;
+        }
+
+        h2 {
+          display: block;
+        }
       }
+    }
+  }
+}
+
+
+@media (max-width:425px) {
+  .container_header--nav {
+
+    .container_imgMenu {
+
+      @include widthSize (425px);
+
+    }
+
+    .container_titleAndImg {
+
+      @include widthSize (425px);
+
+      .titles_header {
+
+        h1,
+        h2,
+        li {
+
+          @include fontSize(50px);
+
+        }
+      }
+    }
+
+    .container_cardsHeader {
+
+      @include widthSize (425px);
+
+      .cardHeader {
+
+        margin: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width:375px) {
+  .container_header--nav {
+
+    .container_imgMenu {
+
+      @include widthSize (375px);
+
+    }
+
+    .container_titleAndImg {
+
+      @include widthSize (375px);
+
+    }
+
+    .container_cardsHeader {
+
+      @include widthSize (375px);
+
+    }
+  }
+}
+@media (max-width:320px) {
+  .container_header--nav {
+
+    .container_imgMenu {
+
+      @include widthSize (320px);
+
+    }
+
+    .container_titleAndImg {
+
+      @include widthSize (320px);
+
+      .titles_header {
+
+        h1,
+        h2,
+        li {
+
+          @include fontSize(38px);
+
+        }
+      }
+    }
+
+    .container_cardsHeader {
+
+      @include widthSize (320px);
+
     }
   }
 }

@@ -36,15 +36,15 @@
       transition: $mainTransitionTime;
 
       .storyline_backgroundImage-one {
-        background-image: url(../../../img/containerMain/stoyline/imgFrente.png);
+        background-image: url(../../img/containerMain/stoyline/imgFrente.png);
       }
 
       .storyline_backgroundImage-two {
-        background-image: url(../../../img/containerMain/stoyline/imgFrente.png);
+        background-image: url(../../img/containerMain/stoyline/imgFrente.png);
       }
 
       .storyline_backgroundImage-tree {
-        background-image: url(../../../img/containerMain/stoyline/imgFrente.png);
+        background-image: url(../../img/containerMain/stoyline/imgFrente.png);
       }
 
       .content_storyline-card {
@@ -148,15 +148,15 @@
         }
 
         .storyline_backgroundImage-one {
-          background-image: url(../../../img/containerMain/stoyline/imgVerso.png);
+          background-image: url(../../img/containerMain/stoyline/imgVerso.png);
         }
 
         .storyline_backgroundImage-two {
-          background-image: url(../../../img/containerMain/stoyline/imgVerso.png);
+          background-image: url(../../img/containerMain/stoyline/imgVerso.png);
         }
 
         .storyline_backgroundImage-tree {
-          background-image: url(../../../img/containerMain/stoyline/imgVerso.png);
+          background-image: url(../../img/containerMain/stoyline/imgVerso.png);
         }
 
       }
@@ -186,7 +186,7 @@
 
           0%,
           100% {
-            transform: translateX(-35%);
+            transform: translateX(35%);
           }
 
           33% {
@@ -194,10 +194,41 @@
           }
 
           66% {
-            transform: translateX(35%);
+            transform: translateX(-35%);
           }
         }
       }
     }
+  }
+}
+
+@media (max-width:425px) {
+  .container_main-storyline {
+    h2 {
+      @include fontSize (36px);
+    }
+  }
+}
+
+@media (max-width:375px) {
+  .container_main-storyline {
+
+    @include widthSize (375px);
+
+    .container_storyline-cards {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width:320px) {
+  .container_main-storyline {
+
+    h2 {
+      @include fontSize (28px);
+    }
+
+    @include widthSize (320px);
+
   }
 }

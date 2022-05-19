@@ -45,15 +45,13 @@
     .content_video-iframe {
       border-radius: 25px;
 
-      @include heigthSize (250px);
-      @include widthSize (450px);
-
       z-index: 2;
 
       video {
         border-radius: 25px 0px 0px 25px;
         box-shadow: $videoBoxShadow;
-        height: 100%;
+
+        width: 450px;
       }
     }
 
@@ -97,23 +95,100 @@
   .container_main-videoPresentation {
     flex-direction: column;
 
-
     @include widthSize (768px);
 
     .container_videoPresentation-description {
       align-items: center;
       width: 80%;
+
       margin: 1rem;
 
       text-align: center;
+    }
 
-      .container_videoPresentation-video {
-        flex-direction: column;
-        width: 100%;
+    .container_videoPresentation-video {
 
-        .content_video-iframe {
-          video {
-            @include widthSize (500px);
+      flex-direction: row;
+
+      width: 100%;
+
+      .content_description-title {
+        @include fontSize(36px);
+      }
+    }
+  }
+}
+
+@media (max-width:425px) {
+  .container_main-videoPresentation {
+    @include widthSize (425px);
+
+    .container_videoPresentation-description {
+      width: 90%;
+
+      margin: 1.5rem 2rem;
+    }
+
+    .container_videoPresentation-video {
+
+      width: 80%;
+
+      .content_video-iframe {
+        video {
+          width: 300px;
+        }
+      }
+
+      .container_video-list {
+
+        .content_video-list {
+          padding: 0.4rem 0.5rem;
+          @include heigthSize (155px);
+
+          li {
+            line-height: 6px;
+            padding: 0.4rem 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:375px) {
+
+  .container_main-videoPresentation {
+
+    @include widthSize (375px);
+
+  }
+}
+
+@media (max-width:320px) {
+
+  .container_main-videoPresentation {
+
+    @include widthSize (320px);
+
+    .container_videoPresentation-video {
+
+      width: 80%;
+
+      .content_video-iframe {
+        video {
+          width: 250px;
+        }
+      }
+
+      .container_video-list {
+
+        .content_video-list {
+          padding: 0.5rem 0.5rem;
+          @include heigthSize (135px);
+
+          li {
+            line-height: 6px;
+            padding: 0.4rem 0.5rem;
           }
         }
       }

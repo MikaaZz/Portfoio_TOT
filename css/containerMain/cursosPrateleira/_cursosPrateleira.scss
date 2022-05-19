@@ -19,21 +19,86 @@
     flex-direction: row;
     justify-content: center;
 
+    height: 600px;
+    width: 960px;
+
+    overflow: hidden;
+
     .background_image-one {
-      background-image: url(../../../img/containerMain/cursosPrateleira/CardCursoPrateleira.png);
+      background-image: url(../../img/containerMain/cursosPrateleira/Tomada-de-Decisão.png);
     }
 
     .background_image-two {
-      background-image: url(../../../img/containerMain/cursosPrateleira/CardCursoPrateleira-1.png);
+      background-image: url(../../img/containerMain/cursosPrateleira/Sustentabilidade.png);
     }
 
     .background_image-tree {
-      background-image: url(../../../img/containerMain/cursosPrateleira/CardCursoPrateleira-2.png);
+      background-image: url(../../img/containerMain/cursosPrateleira/Engenharia_social.png);
+    }
+
+    .background_image-four {
+      background-image: url(../../img/containerMain/cursosPrateleira/open_finance.png);
+    }
+
+    .background_image-five {
+      background-image: url(../../img/containerMain/cursosPrateleira/7_principios.png);
+    }
+
+    .background_image-six {
+      background-image: url(../../img/containerMain/cursosPrateleira/Curso-de-Diversidade.png);
+    }
+
+    .background_image-seven {
+      background-image: url(../../img/containerMain/cursosPrateleira/Nr-17.png);
+    }
+
+    .background_image-eight{
+      background-image: url(../../img/containerMain/cursosPrateleira/HomeOffice.png);
+    }
+
+    .background_image-nine{
+      background-image: url(../../img/containerMain/cursosPrateleira/LGPD.png);
+    }
+
+    .background_image-ten{
+      background-image: url(../../img/containerMain/cursosPrateleira/Curso-Online-Vendas-com-PNL.png);
+    }
+
+    .background_image-eleven{
+      background-image: url(../../img/containerMain/cursosPrateleira/Inovação-e-Gestão-de-Negócios-Digitais.png);
+    }
+
+    .background_image-twelve{
+      background-image: url(../../img/containerMain/cursosPrateleira/Inteligência-emocional-na-era-digital.png);
+    }
+
+    .background_image-thirteen{
+      background-image: url(../../img/containerMain/cursosPrateleira/Matematica-Financeira.png);
+    }
+
+    .background_image-fourteen{
+      background-image: url(../../img/containerMain/cursosPrateleira/Introdução-à-calculadora-HP12C.png);
     }
 
     .container_cursosPrateleira-animate {
       display: flex;
       flex-direction: row;
+
+      animation-duration: 45s;
+      animation-name: sliderAnimate;
+      animation-iteration-count: infinite;
+
+      @keyframes sliderAnimate {
+
+        0%,
+        100% {
+          transform: translateX(40%);
+        }
+
+        50% {
+          transform: translateX(-40%);
+        }
+      }
     }
 
     .content_cursosPrateleira-cards {
@@ -78,6 +143,7 @@
           text-align: center;
 
           color: $blackFontColor;
+          margin: 1rem;
         }
 
         p {
@@ -115,21 +181,16 @@
     }
 
     .container_cursosPrateleira-cards {
-      height: 600px;
+
       width: 400px;
 
-      overflow: hidden;
-
-      .container_cursosPrateleira-animate {
-        animation-duration: 15s;
-        animation-name: sliderAnimate;
-        animation-iteration-count: infinite;
+      .container_cursosPrateleira-animat {
 
         @keyframes sliderAnimate {
 
           0%,
           100% {
-            transform: translateX(33%);
+            transform: translateX(47%);
           }
 
           33% {
@@ -137,10 +198,43 @@
           }
 
           66% {
-            transform: translateX(-33%);
+            transform: translateX(-47%);
           }
         }
       }
     }
+  }
+}
+
+@media (max-width:425px) {
+  .container_main-cursosPrateleira {
+    h2 {
+      @include fontSize (36px);
+    }
+
+    .container_cursosPrateleira-cards {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width:375px) {
+  .container_main-cursosPrateleira {
+
+    h2 {
+      @include fontSize (28px);
+    }
+
+    @include widthSize (375px);
+
+  }
+}
+
+@media (max-width:320px) {
+
+  .container_main-cursosPrateleira {
+
+    @include widthSize (320px);
+
   }
 }

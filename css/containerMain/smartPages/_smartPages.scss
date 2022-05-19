@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
 
-  background-image: url(../../../img/containerMain/smartPages/bgDois.png);
+  background-image: url(../../img/containerMain/smartPages/bgDois.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -50,15 +50,15 @@
       }
 
       .smartPage_cards-imageOne {
-        background-image: url(../../../img/containerMain/smartPages/capaLider.png);
+        background-image: url(../../img/containerMain/smartPages/capaLider.png);
       }
 
       .smartPage_cards-imageTwo {
-        background-image: url(../../../img/containerMain/smartPages/capaUnicred.png);
+        background-image: url(../../img/containerMain/smartPages/capaUnicred.png);
       }
 
       .smartPage_cards-imageTree {
-        background-image: url(../../../img/containerMain/smartPages/capaAilos.png);
+        background-image: url(../../img/containerMain/smartPages/capaAilos.png);
       }
 
       .smartPage_cards-text {
@@ -147,5 +147,36 @@
         }
       }
     }
+  }
+}
+
+@media (max-width:425px) {
+  .container_main-smartPage {
+    h2 {
+      @include fontSize (36px);
+    }
+  }
+}
+
+@media (max-width:375px) {
+  .container_main-smartPage {
+
+    @include widthSize (375px);
+
+    .container_smartPage-cards {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width:320px) {
+  .container_main-smartPage {
+
+    h2 {
+      @include fontSize (28px);
+    }
+
+    @include widthSize (320px);
+
   }
 }
