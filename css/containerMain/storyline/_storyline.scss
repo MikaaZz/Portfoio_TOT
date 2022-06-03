@@ -6,11 +6,18 @@
 
   transition: $mainTransitionTime;
 
-  h2 {
+  h3 {
     color: $whiteFontColor;
     @include fontSize ($subTitleFontSize);
 
     margin: 1rem;
+  }
+
+  p {
+    text-align: center;
+    color: $whiteFontColor;
+    
+    width: 80%;
   }
 
   .container_storyline-cards {
@@ -40,11 +47,11 @@
       }
 
       .storyline_backgroundImage-two {
-        background-image: url(../../img/containerMain/stoyline/imgFrente.png);
+        background-image: url(../../img/containerMain/stoyline/imgFrente2.png);
       }
 
       .storyline_backgroundImage-tree {
-        background-image: url(../../img/containerMain/stoyline/imgFrente.png);
+        background-image: url(../../img/containerMain/stoyline/imgFrente3.png);
       }
 
       .content_storyline-card {
@@ -74,6 +81,8 @@
 
           opacity: 0;
 
+          margin: 0 0 2rem 0;
+
           h2 {
             font-style: normal;
             font-weight: $boldFont;
@@ -83,15 +92,6 @@
             color: $whiteFontColor;
 
             margin: 0;
-          }
-
-          p {
-            font-style: normal;
-            font-weight: $regularFont;
-            @include fontSize ($paragraphCardsFontSize);
-            line-height: 16px;
-
-            color: $whiteFontColor;
           }
         }
 
@@ -152,11 +152,11 @@
         }
 
         .storyline_backgroundImage-two {
-          background-image: url(../../img/containerMain/stoyline/imgVerso.png);
+          background-image: url(../../img/containerMain/stoyline/imgVerso2.png);
         }
 
         .storyline_backgroundImage-tree {
-          background-image: url(../../img/containerMain/stoyline/imgVerso.png);
+          background-image: url(../../img/containerMain/stoyline/imgVerso3.png);
         }
 
       }
@@ -167,7 +167,7 @@
 @media (max-width:768px) {
 
   .container_main-storyline {
-    h2 {
+    h3 {
       @include fontSize (48px);
     }
 
@@ -204,8 +204,14 @@
 
 @media (max-width:425px) {
   .container_main-storyline {
-    h2 {
+    h3 {
       @include fontSize (36px);
+    }
+    .container_storyline-cards{
+
+      .container_storyline-animate {
+        animation-duration: 50s;
+      }
     }
   }
 }
@@ -224,7 +230,7 @@
 @media (max-width:320px) {
   .container_main-storyline {
 
-    h2 {
+    h3 {
       @include fontSize (28px);
     }
 

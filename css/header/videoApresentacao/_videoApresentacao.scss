@@ -45,13 +45,14 @@
     .content_video-iframe {
       border-radius: 25px;
 
+      height: 250px;
+      width: 450px;
+
       z-index: 2;
 
-      video {
+      iframe {
         border-radius: 25px 0px 0px 25px;
         box-shadow: $videoBoxShadow;
-
-        width: 450px;
       }
     }
 
@@ -134,9 +135,8 @@
       width: 80%;
 
       .content_video-iframe {
-        video {
-          width: 300px;
-        }
+        height: 180px;
+        width: 350px;
       }
 
       .container_video-list {
@@ -161,6 +161,22 @@
 
     @include widthSize (375px);
 
+    .container_videoPresentation-video {
+      margin: 0;
+      padding: 0;
+      .content_video-iframe {
+        iframe {
+          border-radius: 25px;
+          
+        }
+      }
+
+      .container_video-list {
+        .content_video-list {
+          display: none;
+        }
+      }
+    }
   }
 }
 
@@ -172,26 +188,7 @@
 
     .container_videoPresentation-video {
 
-      width: 80%;
-
-      .content_video-iframe {
-        video {
-          width: 250px;
-        }
-      }
-
-      .container_video-list {
-
-        .content_video-list {
-          padding: 0.5rem 0.5rem;
-          @include heigthSize (135px);
-
-          li {
-            line-height: 6px;
-            padding: 0.4rem 0.5rem;
-          }
-        }
-      }
+      width: 100%;
     }
   }
 }

@@ -13,6 +13,13 @@
     margin: 0;
   }
 
+  p {
+    text-align: center;
+    color: $whiteFontColor;
+    
+    width: 80%;
+  }
+
   .container_cursosPrateleira-cards {
     align-items: center;
     display: flex;
@@ -84,7 +91,7 @@
       display: flex;
       flex-direction: row;
 
-      animation-duration: 45s;
+      animation-duration: 200s;
       animation-name: sliderAnimate;
       animation-iteration-count: infinite;
 
@@ -98,6 +105,10 @@
         50% {
           transform: translateX(-40%);
         }
+      }
+
+      &:hover {
+        animation-play-state: paused;
       }
     }
 
@@ -123,7 +134,7 @@
         opacity: 0;
 
         position: relative;
-        top: 2rem;
+        
 
         background-color: $whiteColor;
         border-radius: 25px;
@@ -184,7 +195,8 @@
 
       width: 400px;
 
-      .container_cursosPrateleira-animat {
+      .container_cursosPrateleira-animate {
+        animation-duration: 250s;
 
         @keyframes sliderAnimate {
 
@@ -193,11 +205,7 @@
             transform: translateX(47%);
           }
 
-          33% {
-            transform: translateX(0%);
-          }
-
-          66% {
+          50% {
             transform: translateX(-47%);
           }
         }

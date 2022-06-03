@@ -10,10 +10,27 @@
   background-position: center;
 
   h2 {
+    
+    color: $whiteFontColor;
+    @include fontSize (80px);
+
+    text-align: center;
+
+    margin: 1rem;
+  }
+
+  h3 {
     color: $whiteFontColor;
     @include fontSize ($subTitleFontSize);
 
     margin: 1rem;
+  }
+
+  p {
+    text-align: center;
+    color: $whiteFontColor;
+    
+    width: 80%;
   }
 
   .container_smartPage-cards {
@@ -62,7 +79,14 @@
       }
 
       .smartPage_cards-text {
-        margin: 0 1rem 1rem 1rem;
+
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin: 1rem;
+
 
         h4 {
           font-style: normal;
@@ -114,7 +138,12 @@
 
 @media (max-width:768px) {
   .container_main-smartPage {
+
     h2 {
+      @include fontSize (52px);
+    }
+
+    h3 {
       @include fontSize (48px);
     }
 
@@ -152,8 +181,20 @@
 
 @media (max-width:425px) {
   .container_main-smartPage {
+
     h2 {
+      @include fontSize (40px);
+    }
+
+    h3 {
       @include fontSize (36px);
+    }
+
+    .container_smartPage-cards {
+
+      .container_smartPage-animate {
+        animation-duration: 50s;
+      }
     }
   }
 }
@@ -173,6 +214,10 @@
   .container_main-smartPage {
 
     h2 {
+      @include fontSize (32px);
+    }
+
+    h3 {
       @include fontSize (28px);
     }
 

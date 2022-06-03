@@ -5,10 +5,17 @@
 
   background: linear-gradient(180deg, #420E78 0%, rgba(0, 0, 0, 0) 100%);
 
-  h2 {
+  h3 {
     color: $whiteFontColor;
     @include fontSize ($subTitleFontSize);
     margin: 1rem 0;
+  }
+
+  p {
+    text-align: center;
+    color: $whiteFontColor;
+
+    width: 80%;
   }
 
   .container_videosAnimation-grid {
@@ -41,7 +48,6 @@
 
     .videosAnimation-videoTree {
       grid-column: span 1;
-      grid-row: span 2;
 
       video {
         border-radius: 25px;
@@ -49,21 +55,13 @@
       }
     }
 
-    .videosAnimation-videoFour {
-      grid-column: span 2;
-
-      video {
-        border-radius: 25px;
-        width: 600px;
-      }
-    }
   }
 }
 
 @media (max-width:768px) {
   .container_main-videosAnimation {
 
-    h2 {
+    h3 {
 
       @include fontSize (48px);
 
@@ -74,7 +72,7 @@
       grid-template-columns: repeat(2, auto);
 
       .videosAnimation-videoTree {
-        grid-row: span 1;
+        display: none;
       }
 
       .videosAnimation-videoFour {
@@ -90,7 +88,7 @@
 
 @media (max-width:425px) {
   .container_main-videosAnimation {
-    h2 {
+    h3 {
       @include fontSize (36px);
     }
     .container_videosAnimation-grid {
@@ -114,7 +112,7 @@
 
   .container_main-videosAnimation {
 
-    h2 {
+    h3 {
       @include fontSize (28px);
     }
 
