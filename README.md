@@ -1,5 +1,5 @@
 # Portfoio_TOT
-Apresentação dos produtos e projetos que a empresa TOT Educação Corporativa de Impacto oferece aos seus clientes
+Presentation of the products and projects that TOT Corporate Impact Education offers to its clients
 
-## Link de acesso:
+## Link access:
 - https://toteduca.com.br/portfolio
